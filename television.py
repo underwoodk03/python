@@ -27,6 +27,7 @@ class Television:
                 self.__channel+=1
 
 
+
     def channel_down(self):
         if self.__status:
             if self.__channel==Television.MIN_CHANNEL:
@@ -52,7 +53,7 @@ class Television:
 
 
     def __str__(self):
-        return f"Television status: Power: {self.__status}, Channel: {self.__channel}, Volume: {self.__volume}"
+        return f"Power = {self.__status}, Channel = {self.__channel}, volume = {self.__volume}"
 
 
 if __name__ == '__main__':
